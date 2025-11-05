@@ -48,7 +48,7 @@ export default App;
 **3. Setting up Tailwindcss**
 
 - We're using v3 Tailwind in this project.
-- Go to this website `https://v3.tailwindcss.com/docs/guides/vite`
+- Go to this website `https://v3.tailwindcss.com/docs/guides/vite` - **(Skip the first step as you already created a react project - start from the second step)**.
 - As we already create a vite project - we can skip the first step. You can directly write the below in the **terminal** within the **frontend directory**
 
 ```bash
@@ -92,5 +92,16 @@ export default {
 **5. Setting up Shadcn ui**
 
 - Install the shadcn ui by this link `https://ui.shadcn.com/docs/installation/vite`
-- Follow the documentation carefully and copy-paste the required code from the web to the correct files.
+- Follow the documentation carefully **(Skip the first step as you already created a react project - start from the second step)**. Copy-paste the required code from the web to the correct files.
 - Follow github commits of this project repository `https://github.com/Beniel05/Spotify` to get clear code of the set up of Shadcn UI 
+
+**6. Install Clerk (Frontend)**
+
+- Create an account at [https://clerk.com](https://clerk.com)
+- Create a new project named **Spotify Clone** → *(this name will be publicly visible)*
+- Copy your **Publishable Key** from the Clerk dashboard
+- Install Clerk in your React project by following the official documentation for **React setup** - **(Skip the first step as you already created a react project - start from the second step)**. 
+  🔗 [https://clerk.com/docs/quickstarts/react](https://clerk.com/docs/quickstarts/react)
+- Follow the GitHub commits to understand what changes were made in the codebase during this setup
+
+
