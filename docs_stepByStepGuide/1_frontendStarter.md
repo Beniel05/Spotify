@@ -93,4 +93,4 @@ export default {
 
 - Install the shadcn ui by this link `https://ui.shadcn.com/docs/installation/vite`
 - Follow the documentation carefully and copy-paste the required code from the web to the correct files.
-
+- Follow github commits of this project repository `https://github.com/Beniel05/Spotify` to get clear code of the set up of Shadcn UI 

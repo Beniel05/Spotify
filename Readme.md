@@ -1,6 +1,8 @@
 # Project Title
 Spotify Clone — Real-Time Music & Chat App
+
 ---
+> Follow the commits of this repository to get those specific part of codes.
 
 ## Project Overview
 > A full-stack Spotify-inspired web application that lets users **stream music**, **see what their friends are listening to**, and **chat in real time** — all in one platform.
@@ -23,7 +25,7 @@ Spotify Clone — Real-Time Music & Chat App
 | Backend | Node.js, Express |
 | Database | MongoDB |
 | Real-Time | WebSocket / Socket.IO |
-| Authentication | JWT / OAuth |
+| Authentication | JWT / OAuth / Clerk |
 | Styling | Tailwind CSS |
 | Deployment | Vercel / Render / Netlify |
 
