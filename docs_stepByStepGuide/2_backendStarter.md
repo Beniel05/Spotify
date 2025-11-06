@@ -28,3 +28,17 @@
 - Install nodemon `npm i -D nodemon` in the terminal.
 - Nodemon automatically restarts your Node.js server whenever you save a file.
 - It’s used only during development, not in production — that’s why you install it with the -D flag (as a dev dependency).
+
+---
+## Other few details:
+
+> Module
+- Add `"type": "module",` in the backend `package.json` file to use import statements.
+- Create a PORT for your server and put it inside the .env file. And with the help of dotenv process the .env file inside the `index.js`
+
+> Run dev
+- Add below in the `package.json` to run the backend with command
+```js
+"scripts": {
+    "dev": "nodemon src/index.js"
+```
