@@ -94,6 +94,11 @@ export default {
 - Install the shadcn ui by this link `https://ui.shadcn.com/docs/installation/vite`
 - Follow the documentation carefully **(Skip the first step as you already created a react project - start from the second step)**. Copy-paste the required code from the web to the correct files.
 - Follow github commits of this project repository `https://github.com/Beniel05/Spotify` to get clear code of the set up of Shadcn UI 
+> If you're working with tailwindcss v3 like me, use the below terminal commands after following the documentation
+```bash
+npx shadcn@latest init
+npm install -D tailwindcss@3 postcss autoprefixer
+```
 
 **6. Install Clerk (Frontend)**
 
