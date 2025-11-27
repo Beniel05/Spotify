@@ -46,3 +46,5 @@ app.listen(PORT, () => {
     console.log(`URL: http://localhost:${PORT}`);
     connectDB();
 });
+
+// todo: socket.io
