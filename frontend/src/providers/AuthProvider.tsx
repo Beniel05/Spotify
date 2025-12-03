@@ -22,7 +22,7 @@ const AuthProvider = ({children}:{children:React.ReactNode}) => {
                 if (token) {
                     await checkAdminStatus();
                 }
-            } catch (error) {
+            } catch (error:any) {
                 updateApiToken(null);
                 console.log("Error in auth provider", error);
             } finally {

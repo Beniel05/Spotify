@@ -9,7 +9,7 @@ export const getAllAlbums = async (req, res, next) => {
     }
 };
 
-export const getAlbumnById = async (req, res, next) => {
+export const getAlbumById = async (req, res, next) => {
     try {
         const { albumId } = req.params;
 

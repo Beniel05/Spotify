@@ -9,12 +9,12 @@ dotenv.config();
 
 import { connectDB } from "./lib/db.js";
 
-import userRoutes from './routes/users.route.js'
+import userRoutes from './routes/user.route.js'
 import adminRoutes from './routes/admin.route.js'
 import authRoutes from './routes/auth.route.js'
-import songRoutes from './routes/songs.route.js'
-import albumRoutes from './routes/albums.route.js'
-import statRoutes from './routes/stats.route.js'
+import songRoutes from './routes/song.route.js'
+import albumRoutes from "./routes/album.route.js";
+import statRoutes from './routes/stat.route.js'
 
 const __dirname = path.resolve();
 const app = express();
