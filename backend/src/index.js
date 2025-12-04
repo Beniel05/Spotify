@@ -4,6 +4,9 @@ import { clerkMiddleware } from "@clerk/express";
 import fileUpload from "express-fileupload";
 import path from "path";
 import cors from "cors";
+import { createServer } from "http";
+
+import { initializeSocket } from "./lib/socket.js";
 
 dotenv.config();
 
@@ -19,6 +22,9 @@ import statRoutes from './routes/stat.route.js'
 const __dirname = path.resolve();
 const app = express();
 const PORT = process.env.PORT;
+
+const httpServer = createServer(app);
+initializeSocket(httpServer);
 
 app.use(
     cors({
@@ -50,9 +56,7 @@ app.use((err,req,res,next) => {
     res.status(500).json({ message: process.env.NODE_ENV === "production" ? "Internal server error" : err.message });
 });
 
-app.listen(PORT, () => {
+httpServer.listen(PORT, () => {
     console.log(`URL: http://localhost:${PORT}`);
     connectDB();
 });
-
-// todo: socket.io
